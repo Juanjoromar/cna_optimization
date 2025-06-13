@@ -1,0 +1,54 @@
+{
+    "nodes": {
+        "A": {
+            "swap_probability": 0.5,
+            "entanglement_interfaces": 3,
+            "time_slots": [
+                ["0-1"],
+                ["0-2"],
+                ["1-2"]
+            ]
+        },
+        "B": {
+            "swap_probability": 0.5,
+            "entanglement_interfaces": 2,
+            "time_slots": [
+                [],
+                [],
+                ["0-1"]
+            ]
+        },
+        "C": {
+            "swap_probability": 0.5,
+            "entanglement_interfaces": 2,
+            "time_slots": [
+                ["0-1"],
+                [],
+                ["0-1"],
+                []
+            ]
+        },
+        "D": {
+            "swap_probability": 0.5,
+            "entanglement_interfaces":1,
+            "time_slots": [
+                []
+            ]
+        }
+    },
+    
+    "links": {
+        "A-B": {
+            "interfaces": "0-0"
+        },
+        "B-C": {
+            "interfaces": "1-0"
+        },
+        "C-A": {
+            "interfaces": "1-1"
+        },
+        "A-D": {
+            "interfaces": "2-0"
+        }
+    }
+}
