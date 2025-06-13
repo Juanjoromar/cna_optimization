@@ -1,12 +1,12 @@
 ## Compile Instructions Debian 12
 
-```console
+```sh
 sudo apt install build-essential cmake nlohmann-json3-dev
 ```
 
 While in the folder cna_optimization
 
-```console
+```sh
 mkdir build
 cd build
 cmake ..
